@@ -44,8 +44,8 @@ def fans_status():
 
 @app.route('/status/tv')
 def tv_status():
-    return jsonify({"status": get_appliance_status("Television")})
+    return jsonify({"status": get_appliance_status("Television")    })
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8081, debug=True)
